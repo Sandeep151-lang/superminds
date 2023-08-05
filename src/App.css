@@ -1,38 +1,231 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 1fr;
+  height: 50px;
+  background-color: #ff0000bd;
+}
+
+.login-page{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.login-section{
+  /* border: 1px solid red; */
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgb(206, 162, 162);
+}
+
+.register-heading{
+  margin: 5% auto;
   text-align: center;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-account{
+  float: right;
+  margin: 0 5% 5% 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-account > p{
+  font-weight:500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.super-mind{
+  color: red;
+}
+
+.login-feild{
+  margin: 10px 0;
+  
+}
+
+label{
+  margin: 0 5%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:600;
+  letter-spacing: 0.5px;
+  line-height: 5px;
+  font-size: 13px;
+}
+
+input{
+  padding: 5px 10px;
+  width: 90%;
+  margin: 1% 5%;
+}
+
+input[type="text"]{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.register-btn{
+  width: 90%;
+  margin: 2% 5% 5% 5%;
+  padding: 10px 5px;
+  cursor: pointer;
+  background-color: red;
   color: white;
+  outline: red;
+  font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
+  border: 1px solid red;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.table-section{
+  width: 100%;
+}
+
+.blog-head{
+  text-align: center;
+  margin: 2% 0;
+}
+
+.head-image{
+  width: 100%;
+  height: 40vh;
+  object-fit:cover
+}
+
+.blog-detail{
+  width: 90%;
+  /* height: 100vh; */
+  margin: 2% 5%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.profile-name{
+  margin: auto 1%;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.editIcon{
+  margin: auto 0;
+}
+
+.profile-image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+
+.blogs-section{
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  /* border: 1px solid black; */
+  margin-left: 5%;
+position: relative;
+
+}
+
+
+
+.edit-icon{
+float: right;
+/* padding: 10px; */
+cursor: pointer;
+width: 20px;
+margin: 5px 5px;
+}
+
+.delete-icon{
+  float: right;
+  width: 20px;
+  /* border: 1px solid red; */
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.edit-icon:hover{
+  box-shadow: 0 0 5px 2px red;
+}
+
+.delete-icon:hover{
+  box-shadow: 0 0 5px 2px red;
+}
+
+.post-form{
+  width: 60%;
+  height: 100vh;
+  margin: 0 20%;
+  /* border: 1px solid red; */
+}
+
+textarea{
+  width: 90%;
+  height: 60vh;
+  margin: 0 5%;
+}
+
+.post-btn{
+  float: right;
+  margin-right: 5%;
+  margin-top: 2%;
+  width: 130px;
+  padding: 10px 10px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.no-page-butn{
+  width: 130px;
+  padding: 10px 10px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 25%;
+}
+
+.nopage{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.page-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
